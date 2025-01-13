@@ -1,0 +1,664 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+hr{
+    --b-x: 6rem;
+    --b-y: 0;
+    padding-left: calc(var(--b-x)*0.5);
+    padding-right: calc(var(--b-x) * 0.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container{
+    --b-x: 9rem;
+    --b-y: 0;
+    width: 100%;
+    padding-left: calc(var(--b-x) * 0.5);
+    padding-right: calc(var(--b-x) * 0.5);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+body{
+    background:#fefefe;
+}
+nav{
+    margin-top: 1rem;
+    width:100%;
+    height:80px;
+    /* background: #0f0e0e; */
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding:0 100px;
+}
+header .fashionista{
+    display: flex;
+    margin: 1.3rem 0 1.3rem 0;
+    justify-content: space-between;
+
+}
+header .logo{
+    text-align: center;
+    justify-content:center;
+}
+header .fashionista .languages li select{
+    position: relative;
+    background-color: black;
+    color: #fefefe;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    margin-top: 5px;
+
+}
+header .fashionista .contact-number{
+    margin-top: 10px;
+}
+.hamburger{
+    display:none;
+}
+.nav-bar ul{
+    display:flex;
+    justify-content: center;
+    
+}
+.nav-bar ul li a{
+    display: block;
+    color:#000000;
+    font-size:1rem;
+    padding:10px 25px;
+    border-radius:50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav-bar ul li a:hover{
+    color:#11101b;
+    background:#fefefe;
+}
+.nav-bar ul li a.active{
+    color:#11101b;
+    background:#fefefe;
+}
+
+
+
+
+/* MAIN SITE */
+
+.section-one .background-image{
+    /* image-refrence :  pexels-godisable-jacob-949670.jpg */
+    background-image: linear-gradient(transparent 0%, black 100%), url(../assets/images/pexels-godisable-jacob-949670.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.section-one .text{
+    padding-top: 130px;
+}
+
+.section-one .background-image .text{
+    text-align: center;
+    justify-content: center;
+}
+.section-one .text p{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: #fefefe;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.section-one .text h1{
+    color: #fefefe;
+    font-family: '';
+    font-weight: lighter;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4rem;
+}
+.section-one .text button{
+    margin:1rem 0 1rem 0;
+    padding: 1rem 3rem;
+    border: none;
+    transition: 0.2s all ease;
+
+}
+.section-one .text button:hover{
+    border: 2px solid #fefefe;
+    background-color: transparent;
+    color:#fefefe;
+    transform: scale(1.1);
+
+}
+main .section-two{
+    --b-x: 9rem;
+    --b-y: 0;
+    width: 100%;
+    padding-left: calc(var(--b-x) * 0.5);
+    padding-right: calc(var(--b-x) * 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.section-two .heading{
+    text-align: center;
+    margin: 7rem 0 1.5rem 0;
+}
+.section-two .heading h3{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+main .section-three, .section-four, .section-five, .contact-text, 
+.blog-text, .blog-section
+{
+    --b-x: 9rem;
+    --b-y: 0;
+    width: 100%;
+    padding-left: calc(var(--b-x) * 0.5);
+    padding-right: calc(var(--b-x) * 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.section-three .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    gap: 1.5rem;
+}
+.section-three .row{
+    position: relative;
+    transition: all .40s;
+}
+.section-three img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.section-three .row img:hover{
+    transform: scale(0.95);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.section-four{
+    margin: 5rem 0 5rem 0;
+    text-align: center;
+}
+
+.section-four .subscribe h3{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 1.5rem 0 1rem 0;
+}
+.section-four .subscribe p{
+    max-width: 50%;
+    margin: auto;
+    text-align: justify;
+    padding: 0 0 1.5rem 0;
+}
+
+.section-four input{
+    padding: 15px 70px;
+}
+.section-four button{
+    position: relative;
+    padding: 17px;
+    left: -5px;
+    background-color: #000;
+    color: #fefe;
+    border: none;
+    outline: none;
+}
+.section-five{
+    display: flex;
+    background-color: #f9f9f9;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+.section-five .social-media{
+    position: relative;
+    padding: 20px;
+}
+.section-login{
+    transition: .3s all ease-in;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.section-login .box{
+    border: 1px solid #dedede;
+    padding: 25px;
+}
+
+.section-login input{
+    margin: 1rem 0 0.7rem 0;
+    border: 1px solid #dedede;
+    padding: 15px 10px;
+    width: 500px;
+
+}
+.section-login textarea{
+    margin: 1rem 0 0.7rem 0;
+    border: 1px solid #dedede;
+    padding: 15px 10px;
+    resize: none;
+    width: 500px;
+
+}
+.section-login button{
+    padding: 17px;
+    background-color: #000;
+    color: #fefe;
+    border: none;
+    outline: none;
+    width: 500px;
+    text-align: center;
+    margin: 0.5rem 0;
+
+}
+.section-login p{
+    margin: .7rem 0 .7rem 0;
+    text-align: center;
+}
+.section-login a{
+    color: #222;
+    text-decoration: underline;
+}
+.section-login h1{
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0 0.7rem 0;
+}
+.section-login .header a{
+    text-decoration: none;
+}
+.section-login .text p{
+    color: #222;
+    width: 500px;
+    text-align: justify;
+}
+.section-login h3{
+    margin: 1.5rem 0 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-error{
+    transition: .3s all ease-in;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.section-error h4{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.section-error h1{
+    font-size: 20rem;
+}
+.section-error a{
+    display: flex;
+    padding: 17px;
+    background-color: #000;
+    color: #fefe;
+    border: none;
+    outline: none;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+}
+.contact-login{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: .3s all ease-in;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    background-color: #f4f4f4;
+    padding: 2.3rem 0;
+}
+.contact-text h3{
+    font-size: 1.5rem;
+    margin: .7rem 0;
+}
+.contact-section{
+    transition: .3s all ease-in;
+    /* image-refrence : pexels-andrea-piacquadio-974911.jpg */
+    background-image: linear-gradient(transparent 0%, black 100%), url(../assets/images/pexels-andrea-piacquadio-974911.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+.contact-login .box{
+    border: 1px solid #dedede;
+    padding: 25px;
+}
+.contact-login input{
+    margin: 1rem 0 0.7rem 0;
+    border: 1px solid #dedede;
+    padding: 15px 10px;
+    width: 500px;
+
+}
+.contact-login textarea{
+    margin: 1rem 0 0.7rem 0;
+    border: 1px solid #dedede;
+    padding: 15px 10px;
+    resize: none;
+    width: 500px;
+
+}
+.contact-login button{
+    padding: 17px;
+    background-color: #000;
+    color: #fefe;
+    border: none;
+    outline: none;
+    width: 500px;
+    text-align: center;
+    margin: 0.5rem 0;
+
+}
+.blog{
+    background-color: #f4f4f4;
+    padding: 2.3rem 0;
+}
+.blog-text h3{
+    font-size: 2rem;
+    margin: .7rem 0;
+}
+.blog-section{
+    transition: .3s all ease-in;
+    margin: 1rem 0 1rem 0;
+    font-family: cambria;
+}
+.blog-section img{
+    height: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin: 1rem 0 1rem 0;
+
+}
+.blog-section hr{
+    margin: 1rem 0 1rem 0;
+
+}
+.blog-section h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.blog-section .description p{
+    margin: 1rem 0 1rem 0;
+    line-height: 20px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+}
+footer .span{
+    margin-bottom: 30px;
+}
+footer span a{
+    padding: 0 2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+
+}
+footer .social-media a{
+    text-decoration: none;
+}
+footer p{
+    font-size:small;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+
+}
+.blog-footer{
+    background-color: #f4f4f4;
+    margin-top: 100px;
+    padding: 50px;
+}
+.contact-footer{
+    background-color: #f4f4f4;
+    margin-top: 0px;
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width:1100px){
+     header{
+        padding: 0 30px;
+     }
+}
+
+@media only screen and (max-width:900px){
+    .section-one .background-image{
+        height: 68vh;
+    }
+    .hamburger{
+        display: block;
+        cursor:pointer;
+    }
+    .hamburger .line{
+        width:30px;
+        height:3px;
+        background:#000000;
+        margin:6px 2rem;
+    }
+    .nav-bar{
+        height:0;
+        position:absolute;
+        top:65px;
+        left:0;
+        right:0;
+        width:100vw;
+        background-color: rgb(0, 0, 0);
+        /* background-color: #ff8c00; */
+        opacity: -1;
+        transition:0.7s;
+        overflow:hidden;
+    }
+    .nav-bar.active{
+        height:400px;
+    }
+    .nav-bar ul {
+        display:block;
+        width:fit-content;  
+        margin:10px auto 0 auto;
+        text-align:center;
+        transition:0.5s;
+    }
+    .nav-bar.active{
+        opacity:1;
+
+    }
+    .nav-bar ul li a{
+        margin-top: 10px;
+        font-size: 1.3rem;
+        color: white;
+    }
+    header .fashionista .languages li select{
+        display: none;
+    }
+    main .section-two{
+        --b-x: 5rem;
+        --b-y: 0;
+        width: 100%;
+        padding-left: calc(var(--b-x) * 0.5);
+        padding-right: calc(var(--b-x) * 0.5);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .section-one .text h1{
+        font-size: 2.3rem;
+    }
+    header .fashionista .contact-number{
+        display: none;
+    }
+    header .fashionista{
+        display: flex;
+        margin: 1.3rem 0 1.3rem 0;
+        justify-content: center;
+    
+    }
+    main .section-three, .section-four, .section-five,
+    .contact-text, .blog-section
+    {
+        width: 100%;
+        padding-left: 0.63rem;
+        padding-right: 0.75rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .section-four .subscribe h3{
+        letter-spacing: 1.5px;
+        width: 100%;
+    }
+    .section-four .subscribe p{
+        max-width: 100%;
+        margin: auto;
+    }
+    .section-four button{
+        width: 90%;
+        background-color: #000;
+        color: #fefe;
+        margin-left: 10px;
+    }
+    .section-four input{
+        width: 90%;
+    }
+    .section-five{  
+        font-size: 1rem;
+        letter-spacing:2px;
+    }
+    .section-login{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-login .box{
+        border: 1px solid #dedede;
+        padding: 25px;
+    }
+    
+    .section-login input{
+        margin: 1rem 0 0.7rem 0;
+        border: 1px solid #dedede;
+        padding: 15px 10px;
+        width: 100%;
+    
+    }
+    .section-login button{
+        width: 100%;
+    }
+    .section-login .text p{
+        width: 100%;
+        text-align: justify;
+    }
+    .section-login textarea{
+        width: 100%;
+    
+    }
+    .section-error{
+        background-color: rgb(255, 255, 255);
+    }
+    .section-error h4{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    .section-error h1{
+        font-size: 13rem;
+    }
+    
+    
+    
+    
+    
+}
+
